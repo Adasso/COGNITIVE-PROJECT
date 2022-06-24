@@ -1,5 +1,5 @@
-import logo from './logo.png';
-import './App.css';
+import logo from '../logo.png';
+import '../App.css';
 import { Button, Card, CardContent, TextField } from '@mui/material';
 import { Container } from '@mui/system';
 import { Link } from "react-router-dom";
@@ -47,12 +47,21 @@ const Login = () =>{
 }
 
 
-function App() {
+function Users() {
   return (
     <div className="App">
       <Login></Login>
+      <nav
+        style={{
+          borderBottom: "solid 1px",
+          paddingBottom: "1rem",
+        }}
+      >
+        <Link to="/invoices">Invoices</Link> |{" "}
+        <Link to="/expenses">Expenses</Link>
+      </nav>
     </div>
   );
 }
 
-export default App;
+export default Users;
