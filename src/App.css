@@ -40,16 +40,26 @@
 .LoginContainer{
   background-color: #161616;
 }
-
-.LoginContent {
-  background-color: #E5E5E5;
-}
-.LoginCard {
-  box-shadow: none !important;
-}
-.BlackStyle{
+.LogoContainer{
+  margin: 2rem 0 2rem 0;
   color: #26E2B3;
 }
+
+.LoginCard {
+  margin: 1rem;
+  box-shadow: none !important;
+}
+
+.LoginContent {
+  background-color: #232323;
+  color: white;
+}
+.TextFieldStyle > label, fieldset,input {
+  color: white !important;
+  border-color: white !important;
+}
+
+
 .PrimaryButtonStyle{
   background-color: #2FC5A1 !important;
   color: #676767;

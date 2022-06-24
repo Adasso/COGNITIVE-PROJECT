@@ -11,10 +11,10 @@ const LoginForm = () =>{
       Bienvenido.
     </div>
     <div>
-     <TextField id="outlined-basic" label="Email" variant="outlined" />
+     <TextField id="outlined-basic" label="Email" variant="outlined" className="TextFieldStyle"/>
     </div>
     <div>
-      <TextField id="outlined-basic" label="Contraseña" variant="outlined" />
+      <TextField id="outlined-basic" label="Contraseña" variant="outlined" className="TextFieldStyle"/>
     </div>
     <div>
       <Button variant="contained" className="PrimaryButtonStyle">Sign In</Button>
@@ -28,7 +28,7 @@ const LoginForm = () =>{
 }
 
 const LoginLogo = () =>{
-  return <div className="BlackStyle">
+  return <div className="LogoContainer">
     <div>
       <img src={logo} className="App-logo" alt="logo" />
     </div>
