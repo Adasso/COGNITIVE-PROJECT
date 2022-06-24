@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 65px;
   pointer-events: none;
 }
 
@@ -35,4 +35,26 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.LoginContainer{
+  background-color: #161616;
+}
+
+.LoginContent {
+  background-color: #E5E5E5;
+}
+.LoginCard {
+  box-shadow: none !important;
+}
+.BlackStyle{
+  color: #26E2B3;
+}
+.PrimaryButtonStyle{
+  background-color: #2FC5A1 !important;
+  color: #676767;
+}
+.SecondaryButtonStyle{
+  border-color: #2FC5A1 !important;
+  color: #2FC5A1 !important;
 }

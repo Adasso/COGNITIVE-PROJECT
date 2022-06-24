@@ -1,23 +1,55 @@
-import logo from './logo.svg';
+import logo from './logo.png';
 import './App.css';
+import { Button, Card, CardContent, TextField } from '@mui/material';
+import { Container } from '@mui/system';
+
+
+const LoginForm = () =>{
+  return <Card sx={{minWidth: 275}}  className="LoginCard">
+  <CardContent className="LoginContent">
+    <div>
+      Bienvenido.
+    </div>
+    <div>
+     <TextField id="outlined-basic" label="Email" variant="outlined" />
+    </div>
+    <div>
+      <TextField id="outlined-basic" label="Contraseña" variant="outlined" />
+    </div>
+    <div>
+      <Button variant="contained" className="PrimaryButtonStyle">Sign In</Button>
+    </div>
+    <div>
+      <Button variant="outlined" className="SecondaryButtonStyle">Sign Up</Button>
+    </div>
+    
+  </CardContent>
+</Card>
+}
+
+const LoginLogo = () =>{
+  return <div className="BlackStyle">
+    <div>
+      <img src={logo} className="App-logo" alt="logo" />
+    </div>
+    Social Find
+  </div>
+}
+
+const Login = () =>{
+  return (
+    <Container className="LoginContainer" maxWidth="sm">
+      <LoginLogo></LoginLogo>
+      <LoginForm></LoginForm>
+    </Container>
+  );
+}
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Login></Login>
     </div>
   );
 }
