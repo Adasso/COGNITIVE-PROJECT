@@ -84,15 +84,18 @@
   max-width: 60rem;
   min-height: 3rem;
   margin: 2rem;
+  padding: 0.5rem;
   background-color: #161616 !important;
   color: white !important;
+  border-radius: 10px !important;
 }
 
 .ViewContainer{
   max-width: 80rem;
-  padding: 2rem;
+  padding: 0.1rem 2rem 2rem 2rem;
   background-color: #232323 !important;
   height: 100vh;
+  border-radius: 20px !important;
 }
 
 .NavbarContentContainer{
@@ -110,8 +113,8 @@
   background-color: black !important;
 }
 
-.DrawerStyle{
-  background-color: #161616 !important;
+div.DraweStyle{
+  background: #161616 !important;
 }
 
 .LoginTitle{
@@ -125,8 +128,30 @@
 
 .ButtonContainer{
   margin: 1rem;
+  max-width: 15rem;
 }
 
 .ExtraPadding{
   margin: 0 0 1.5rem 0 !important;
+}
+
+fieldset.MuiOutlinedInput-notchedOutline{
+  border-radius: 20px !important;
+}
+
+div.MuiInputBase-formControl{
+  height: 40px;
+}
+
+input.MuiInputBase-input{
+  padding: 0.5rem 1rem 0.5rem 1rem !important;
+}
+
+label.MuiInputLabel-formControl{
+  line-height: 1em !important;
+}
+
+.SettingsInputContainer {
+  text-align: left !important;
+  margin: 1rem 1rem 1rem 2rem;
 }

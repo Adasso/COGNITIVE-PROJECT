@@ -1,6 +1,6 @@
 function Viewtitle(props){
     return (
-            <h1 className="ViewTitle">{props.children}</h1>
+            <h2 className="ViewTitle">{props.children}</h2>
     );
 }
 

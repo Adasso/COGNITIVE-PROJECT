@@ -12,12 +12,13 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
+import AssignmentIndIcon from '@mui/icons-material/AssignmentInd';
+import ManageSearchIcon from '@mui/icons-material/ManageSearch';
+import BarChartIcon from '@mui/icons-material/BarChart';
+import SettingsIcon from '@mui/icons-material/Settings';
+import PowerSettingsNewIcon from '@mui/icons-material/PowerSettingsNew';
+
+import Navbaritem from './Navbaritem';
 
 const drawerWidth = 240;
 
@@ -128,29 +129,23 @@ export default function MiniDrawer(props) {
         </DrawerHeader>
         <Divider />
         <List>
-          {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-            <ListItem key={text} disablePadding sx={{ display: 'block' }}>
-              <ListItemButton
-                sx={{
-                  minHeight: 48,
-                  justifyContent: open ? 'initial' : 'center',
-                  px: 2.5,
-                }}
-              >
-                <ListItemIcon
-                  sx={{
-                    minWidth: 0,
-                    mr: open ? 3 : 'auto',
-                    justifyContent: 'center',
-                  }}
-                >
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                </ListItemIcon>
-                <ListItemText primary={text} sx={{ opacity: open ? 1 : 0 }} />
-              </ListItemButton>
-            </ListItem>
-          ))}
+            <Navbaritem text={"Usuarios"} openStatus ={open} navpath={"/users"}>
+              <AssignmentIndIcon />
+            </Navbaritem>
+            <Navbaritem text={"Proyectos"} openStatus ={open} navpath={"/projects"}>
+              <ManageSearchIcon />
+            </Navbaritem>
+            <Navbaritem text={"Dashboard"} openStatus ={open} navpath={"/dashboard"}>
+              <BarChartIcon />
+            </Navbaritem>
+            <Navbaritem text={"Configuración"} openStatus ={open} navpath={"/settings"}>
+              <SettingsIcon />
+            </Navbaritem>
+            <Navbaritem text={"Cerrar sesión"} openStatus ={open} navpath={"/log-out"}>
+              <PowerSettingsNewIcon />
+            </Navbaritem>
         </List>
+        <Divider />
       </Drawer>
       <Box className="NavbarContentContainer" component="main" sx={{ flexGrow: 1, p: 3 }}>
         <DrawerHeader />
