@@ -9,6 +9,9 @@ import {
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Users from "./routes/Users";
+import Dashboard from './routes/Dashboard';
+import Projects from './routes/Projects';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -17,6 +20,10 @@ root.render(
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="users" element={<Users />} />
+      <Route path="dashboard" element={<Dashboard />} />
+      <Route path="projects" element={<Projects />} />
+      
+
     </Routes>
   </BrowserRouter>
 );

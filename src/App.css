@@ -68,3 +68,37 @@
   border-color: #2FC5A1 !important;
   color: #2FC5A1 !important;
 }
+
+.UserPaper{
+  max-width: 60rem;
+  min-height: 3rem;
+  margin: 2rem;
+  background-color: #161616 !important;
+  color: white !important;
+}
+
+.ViewContainer{
+  max-width: 80rem;
+  padding: 2rem;
+  background-color: #232323 !important;
+  height: 100vh;
+}
+
+.NavbarContentContainer{
+  background-color: #161616 !important;
+  height: 100vh;
+}
+
+.ViewTitle{
+  color: white;
+  display: flex;
+  justify-content: left;
+}
+
+.AppBarStyle{
+  background-color: black !important;
+}
+
+.DrawerStyle{
+  background-color: #161616 !important;
+}

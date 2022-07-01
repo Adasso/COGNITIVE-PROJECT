@@ -1,28 +1,33 @@
-import logo from '../logo.png';
 import '../App.css';
-import { Button, Card, CardContent, TextField } from '@mui/material';
-import { Container } from '@mui/system';
-import { Link } from "react-router-dom";
-import  Linearbar from '../components/Linearbar.js'
-import Piechart from '../components/Piechart';
+import Paper from "@mui/material/Paper";
+
+import User from '../components/User';
+import Viewtitle from '../components/Viewtitle';
+import Navbar from '../components/Navbar';
 
 
 
 function Users() {
+  const users = ["Jessy", "James", "Jack"];
+  const items = [];
+
+  for (let user of users){
+    items.push(<User/>);
+  }
+
+
   return (
     <div className="App">
-      <nav
-        style={{
-          borderBottom: "solid 1px",
-          paddingBottom: "1rem",
-        }}
-      >
-        <Link to="/invoices">Invoices</Link> |{" "}
-        <Link to="/expenses">Expenses</Link>
-      </nav>
-      <Linearbar/>
-      <Piechart></Piechart>
+      <Navbar>
+        <Paper className="ViewContainer">
+          <Viewtitle>
+            Users
+          </Viewtitle>
+          {items}
+        </Paper>
+      </Navbar>
     </div>
+    
   );
 }
 
