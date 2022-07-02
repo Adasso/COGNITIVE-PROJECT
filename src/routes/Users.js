@@ -8,11 +8,11 @@ import Navbar from '../components/Navbar';
 
 
 function Users() {
-  const users = ["Jessy", "James", "Jack"];
+  const users = ["Jessy Kris", "James Segura", "Jack Pilar"];
   const items = [];
 
   for (let user of users){
-    items.push(<User/>);
+    items.push(<User name={user} rol={"Administrador"} activeSearchs={2} doneSearchs={1}/>);
   }
 
 

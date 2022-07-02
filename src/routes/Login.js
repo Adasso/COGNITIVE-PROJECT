@@ -2,6 +2,7 @@ import logo from '../logo.png';
 import '../App.css';
 import { Button, Card, CardContent, Grid, TextField } from '@mui/material';
 import { Container } from '@mui/system';
+import { Link } from 'react-router-dom';
 
 const LoginForm = () =>{
   return <Card sx={{minWidth: 275}}  className="LoginCard">
@@ -16,7 +17,7 @@ const LoginForm = () =>{
       <TextField id="outlined-basic" label="Contraseña" variant="outlined" className="TextFieldStyle"/>
     </div>
     <div className="ButtonContainer">
-      <Button variant="contained" className="PrimaryButtonStyle">Sign In</Button>
+      <Button variant="contained" className="PrimaryButtonStyle" component={Link} to={"/users"}>Sign In</Button>
     </div>
     <div className="ButtonContainer">
       <Button variant="outlined" className="SecondaryButtonStyle">Sign Up</Button>

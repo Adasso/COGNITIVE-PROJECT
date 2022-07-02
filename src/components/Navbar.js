@@ -141,7 +141,7 @@ export default function MiniDrawer(props) {
             <Navbaritem text={"Configuración"} openStatus ={open} navpath={"/settings"}>
               <SettingsIcon />
             </Navbaritem>
-            <Navbaritem text={"Cerrar sesión"} openStatus ={open} navpath={"/log-out"}>
+            <Navbaritem text={"Cerrar sesión"} openStatus ={open} navpath={"/login"}>
               <PowerSettingsNewIcon />
             </Navbaritem>
         </List>

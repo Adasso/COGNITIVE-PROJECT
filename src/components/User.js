@@ -2,21 +2,25 @@ import Grid from "@mui/material/Grid";
 import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
 import Paper from "@mui/material/Paper";
+import Avatar from '@mui/material/Avatar';
 
 
-function User(){
+function User(props){
     return (
             <Paper elevation={0}  className="UserPaper">
                 <Grid container spacing={0}>
-                    <Grid item xs={3}>
-                        Luis Cristuf
-                        Administrador
-                    </Grid>
-                    <Grid item xs={6}>
-                        Busquedas Habilitadas: 2
-                        Busquedas Realizadas: 1
+                    <Grid item xs={2}>
+                        <Avatar src="./user1.jpg"></Avatar>
                     </Grid>
                     <Grid item xs={3}>
+                        <div>{props.name}</div>
+                        <div>{props.rol}</div>
+                    </Grid>
+                    <Grid item xs={5}>
+                        <div>Busquedas Habilitadas: {props.activeSearchs}</div>
+                        <div>Busquedas Realizadas: {props.doneSearchs}</div>
+                    </Grid>
+                    <Grid item xs={2}>
                         <EditIcon/>
                         <DeleteIcon/>
                     </Grid>
