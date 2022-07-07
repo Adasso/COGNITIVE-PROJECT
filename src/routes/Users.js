@@ -12,7 +12,7 @@ function Users() {
   const items = [];
 
   for (let user of users){
-    items.push(<User name={user} rol={"Administrador"} activeSearchs={2} doneSearchs={1}/>);
+    items.push(<User name={user} rol={"Administrador"} activeSearchs={2} doneSearchs={1} url="https://imgur.com/KkOwbfy.jpg"/>);
   }
 
 
