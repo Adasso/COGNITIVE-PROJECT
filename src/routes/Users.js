@@ -38,13 +38,13 @@ class Users extends Component {
       <div className="App">
         <Navbar>
           <Paper className="ViewContainer">
-            <Viewtitle>
+            <Viewtitle buttonText="Crear Usuario" buttonUrl="/create-user" showButton="True">
               Users
             </Viewtitle>
             { 
               users?
                 users.map((user,index)=>
-                <User id={user._id} name={user.name} email={user.email} rol={"Administrador"} activeSearchs={2} doneSearchs={1} url={"https://th.bing.com/th/id/OIP.2i5UaEHaQM3PYAYXQyM1AAAAAA?pid=ImgDet&rs=1"} />
+                <User id={user._id}  name={user.name} email={user.email} rol={"Administrador"} activeSearchs={2} doneSearchs={1} url={"https://th.bing.com/th/id/OIP.2i5UaEHaQM3PYAYXQyM1AAAAAA?pid=ImgDet&rs=1"} />
                 )
                 :
                 null

@@ -8,9 +8,14 @@ function Viewtitle(props){
                 <h2 className="ViewTitle">{props.children}</h2>
             </Grid>
             <Grid items xs={6}>
+                {props.showButton?
                 <div className="ButtonContainer">
-                    <Button variant="contained" className="PrimaryButtonStyle" component={Link} to={"/create-user"}>Crear Usuario</Button>
+                    <Button variant="contained" className="PrimaryButtonStyle" component={Link} to={props.buttonUrl}>{props.buttonText}</Button>
                 </div>
+                :
+                null
+            }
+                
             </Grid>
         </Grid>
     );
