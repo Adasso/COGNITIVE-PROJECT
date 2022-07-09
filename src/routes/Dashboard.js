@@ -101,8 +101,11 @@ class Dashboard extends Component {
     axios.get("http://18.204.17.108:5000/project/62c961e0ea36a4a344284f5c")
     .then(response =>{
       console.log(response.data);
-      console.log(response.data.twitter_results);
-      this.setState({ totalResults: response.data.total_results });
+      console.log(response.data.twitter_results.data);
+      this.setState({ totalResults: response.data.total_results,
+        twitterComments: response.data.twitter_results.data,
+        youtubeComment: response.data.youtube_results.video_1
+      });
     })
   }
 
