@@ -13,6 +13,10 @@ function Navbaritem(props){
             minHeight: 48,
             justifyContent: props.openStatus ? 'initial' : 'center',
             px: 2.5,
+            "&:hover": {
+              color: "green !important",
+              cursor: "default"
+              }
           }}
           
           component={Link} to={props.navpath}
@@ -22,6 +26,7 @@ function Navbaritem(props){
               minWidth: 0,
               mr: props.openStatus ? 3 : 'auto',
               justifyContent: 'center',
+              color: '#8A8B8C',
             }}
           >
 

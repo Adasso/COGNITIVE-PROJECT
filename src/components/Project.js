@@ -12,10 +12,11 @@ function Project(props){
                         <Box
                             component="img"
                             sx={{
-                                height: 90,
-                                width: 90,
-                                maxHeight: { xs: 90, md:90},
-                                maxWidth: { xs: 90, md: 90},
+                                height: 60,
+                                width: 60,
+                                maxHeight: { xs: 60, md:60},
+                                maxWidth: { xs: 60, md: 60},
+                                borderRadius: '16px',
                             }}
                             src={props.url}
                             />

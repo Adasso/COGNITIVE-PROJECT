@@ -155,3 +155,8 @@ label.MuiInputLabel-formControl{
   text-align: left !important;
   margin: 1rem 1rem 1rem 2rem;
 }
+
+.MuiDrawer-paperAnchorLeft{
+  background-color: #161616 !important;
+  border-right: #000  !important;
+}

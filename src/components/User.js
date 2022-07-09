@@ -14,7 +14,7 @@ function User(props){
                     </Grid>
                     <Grid item xs={3}>
                         <div>{props.name}</div>
-                        <div>{props.rol}</div>
+                        <div>{props.email}</div>
                     </Grid>
                     <Grid item xs={5}>
                         <div>Busquedas Habilitadas: {props.activeSearchs}</div>

@@ -127,7 +127,6 @@ export default function MiniDrawer(props) {
             {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
           </IconButton>
         </DrawerHeader>
-        <Divider />
         <List>
             <Navbaritem text={"Usuarios"} openStatus ={open} navpath={"/users"}>
               <AssignmentIndIcon />
