@@ -1,4 +1,5 @@
 import { Grid, Button } from "@mui/material";
+import { Link } from 'react-router-dom';
 
 function Viewtitle(props){
     return (
@@ -8,7 +9,7 @@ function Viewtitle(props){
             </Grid>
             <Grid items xs={6}>
                 <div className="ButtonContainer">
-                    <Button variant="contained" className="PrimaryButtonStyle">Actualizar</Button>
+                    <Button variant="contained" className="PrimaryButtonStyle" component={Link} to={"/create-user"}>Crear Usuario</Button>
                 </div>
             </Grid>
         </Grid>

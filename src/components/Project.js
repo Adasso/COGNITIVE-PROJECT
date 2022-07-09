@@ -3,6 +3,10 @@ import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
 import Paper from "@mui/material/Paper";
 import { Box } from "@mui/system";
+import VisibilityIcon from '@mui/icons-material/Visibility';
+import { Button } from "@mui/material";
+import { Link } from 'react-router-dom';
+
 
 function Project(props){
     return (
@@ -24,12 +28,19 @@ function Project(props){
                     <Grid item xs={3}>
                         <div>{props.name}</div>
                     </Grid>
-                    <Grid item xs={5}>
+                    <Grid item xs={3}>
                         <div> </div>
                     </Grid>
-                    <Grid item xs={2}>
-                        <EditIcon/>
-                        <DeleteIcon/>
+                    <Grid item xs={4}>
+                        <Button component={Link} to={"/dashboard"}>
+                            <VisibilityIcon/>
+                        </Button>
+                        <Button>
+                            <EditIcon/>
+                        </Button>
+                        <Button>
+                            <DeleteIcon/>
+                        </Button>
                     </Grid>
                 </Grid>
             </Paper>

@@ -12,6 +12,7 @@ import Users from "./routes/Users";
 import Dashboard from './routes/Dashboard';
 import Projects from './routes/Projects';
 import Settings from './routes/Settings';
+import CreateUser from './routes/CreateUser'
 
 
 
@@ -22,6 +23,7 @@ root.render(
       <Route path="/" element={<Users />} />
       <Route path="login" element={<App />} />
       <Route path="users" element={<Users />} />
+      <Route path="create-user" element={<CreateUser />} />
       <Route path="dashboard" element={<Dashboard />} />
       <Route path="projects" element={<Projects />} />
       <Route path="settings" element={<Settings />} />
