@@ -102,7 +102,7 @@ class Projects extends Component {
       <div className="App">
         <Navbar>
           <Paper className="ViewContainer">
-            <Viewtitle> 
+            <Viewtitle buttonText="Crear Proyecto" buttonUrl="/create-project" showButton="True"> 
                 Projects
             </Viewtitle>
             { 
