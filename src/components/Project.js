@@ -44,7 +44,7 @@ function Project(props){
                         <div> </div>
                     </Grid>
                     <Grid item xs={4}>
-                        <Button component={Link} to={"/dashboard"}>
+                        <Button component={Link} to={"/dashboard/"+props.id}>
                             <VisibilityIcon/>
                         </Button>
                         <Button>

@@ -97,6 +97,12 @@ class Projects extends Component {
 
   render(){
     const { projects } = this.state;
+    const imgUrl = [
+      "https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-original-577x577/s3/0017/6271/brand.gif?itok=E07WlTZl",
+      "https://negocio.pe/sites/negocio.logicaldesign.pe/files/styles/maxima_imagen/public/logo_con_aire_-_copia.png?itok=5yf7iv9q",
+      "https://th.bing.com/th/id/R.bddb092bd4308d7ae43f26869c83958d?rik=HeJ2pa%2bV%2bVtLkg&riu=http%3a%2f%2fwww.bhwt.org.uk%2fwp-content%2fuploads%2f2015%2f03%2fMcdonalds_Logo.jpg&ehk=0D7r2idvlHbCmzO78w9RU8t5x%2bMiD4KqIug9A%2bSKH6s%3d&risl=&pid=ImgRaw&r=0"
+      
+    ]
     
     return (
       <div className="App">
@@ -108,7 +114,7 @@ class Projects extends Component {
             { 
               projects?
                 projects.map((project,index)=>
-                <Project  id={project._id} name={project.mainWord} url={"https://th.bing.com/th/id/R.bddb092bd4308d7ae43f26869c83958d?rik=HeJ2pa%2bV%2bVtLkg&riu=http%3a%2f%2fwww.bhwt.org.uk%2fwp-content%2fuploads%2f2015%2f03%2fMcdonalds_Logo.jpg&ehk=0D7r2idvlHbCmzO78w9RU8t5x%2bMiD4KqIug9A%2bSKH6s%3d&risl=&pid=ImgRaw&r=0"} />
+                <Project  id={project._id} name={project.mainWord} url={imgUrl[index]} />
                 )
                 :
                 null

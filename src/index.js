@@ -21,11 +21,11 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<Dashboard />} />
+      <Route path="/" element={<App />} />
       <Route path="login" element={<App />} />
       <Route path="users" element={<Users />} />
       <Route path="create-user" element={<CreateUser />} />
-      <Route path="dashboard" element={<Dashboard />} />
+      <Route path="dashboard/:projectID" element={<Dashboard />} />
       <Route path="projects" element={<Projects />} />
       <Route path="create-project" element={<CreateProject />} />
       <Route path="settings" element={<Settings />} />

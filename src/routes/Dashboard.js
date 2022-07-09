@@ -55,12 +55,15 @@ import Piechart from '../components/Piechart';
 
 import axios from 'axios';
 import Comment from '../components/Comment';
+import { withRouter } from './withRouter';
 
 class Dashboard extends Component {
   constructor(props){
     super(props);
+    
 
     this.state = {
+      projectID: this.props.params.projectID,
       totalResults : {
           "disgust": 0.099267,
           "fear": 0.011915,
@@ -97,8 +100,10 @@ class Dashboard extends Component {
     };
   }
   
+   
+
   componentDidMount(){
-    axios.get("http://18.204.17.108:5000/project/62c961e0ea36a4a344284f5c")
+    axios.get("http://18.204.17.108:5000/project/"+this.state.projectID)
     .then(response =>{
       console.log(response.data);
       console.log(response.data.twitter_results.data);
@@ -164,5 +169,5 @@ class Dashboard extends Component {
 }
 
 
-export default Dashboard;
+export default withRouter(Dashboard);
 

@@ -134,9 +134,7 @@ export default function MiniDrawer(props) {
             <Navbaritem text={"Proyectos"} openStatus ={open} navpath={"/projects"}>
               <ManageSearchIcon />
             </Navbaritem>
-            <Navbaritem text={"Dashboard"} openStatus ={open} navpath={"/dashboard"}>
-              <BarChartIcon />
-            </Navbaritem>
+            
             <Navbaritem text={"Configuración"} openStatus ={open} navpath={"/settings"}>
               <SettingsIcon />
             </Navbaritem>

@@ -1,5 +1,5 @@
 
-import { PieChart, Pie, Sector, Cell, ResponsiveContainer } from 'recharts';
+import { PieChart, Pie, Sector, Cell, ResponsiveContainer, Legend } from 'recharts';
 
 
 
@@ -16,11 +16,12 @@ function Piechart(props){
 
 
 const PieComponent  = () => (
-    <PieChart width={800} height={400}>
+    <PieChart width={200} height={300}>
+      <Legend verticalAlign="bottom" align="center" />
       <Pie
         data={data}
-        cx={120}
-        cy={200}
+        cx={100}
+        cy={85}
         innerRadius={60}
         outerRadius={80}
         fill="#8884d8"
