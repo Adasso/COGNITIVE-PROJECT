@@ -108,7 +108,7 @@ class Projects extends Component {
             { 
               projects?
                 projects.map((project,index)=>
-                <Project name={project.mainWord} url={"https://th.bing.com/th/id/R.bddb092bd4308d7ae43f26869c83958d?rik=HeJ2pa%2bV%2bVtLkg&riu=http%3a%2f%2fwww.bhwt.org.uk%2fwp-content%2fuploads%2f2015%2f03%2fMcdonalds_Logo.jpg&ehk=0D7r2idvlHbCmzO78w9RU8t5x%2bMiD4KqIug9A%2bSKH6s%3d&risl=&pid=ImgRaw&r=0"} />
+                <Project  id={project._id} name={project.mainWord} url={"https://th.bing.com/th/id/R.bddb092bd4308d7ae43f26869c83958d?rik=HeJ2pa%2bV%2bVtLkg&riu=http%3a%2f%2fwww.bhwt.org.uk%2fwp-content%2fuploads%2f2015%2f03%2fMcdonalds_Logo.jpg&ehk=0D7r2idvlHbCmzO78w9RU8t5x%2bMiD4KqIug9A%2bSKH6s%3d&risl=&pid=ImgRaw&r=0"} />
                 )
                 :
                 null

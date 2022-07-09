@@ -6,9 +6,21 @@ import { Box } from "@mui/system";
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import { Button } from "@mui/material";
 import { Link } from 'react-router-dom';
+import axios from "axios";
 
 
 function Project(props){
+
+    const baseUrl="http://18.204.17.108:5000/project/";
+    const removeData = () => {
+        axios
+          .delete(baseUrl+ props.id)
+          .then(() => {
+            props.setRequestData(new Date());
+          })
+          .catch(err => console.log(err));
+      };
+
     return (
             <Paper elevation={0}  className="UserPaper">
                 <Grid container spacing={0}>
@@ -38,7 +50,7 @@ function Project(props){
                         <Button>
                             <EditIcon/>
                         </Button>
-                        <Button>
+                        <Button  onClick={removeData}>
                             <DeleteIcon/>
                         </Button>
                     </Grid>
