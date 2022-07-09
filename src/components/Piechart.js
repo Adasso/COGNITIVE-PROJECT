@@ -1,13 +1,19 @@
 
 import { PieChart, Pie, Sector, Cell, ResponsiveContainer } from 'recharts';
 
-const data = [
-    { name: "Insatisfecho", value: 200 },
-    { name: "Neutral", value: 300 },
-    { name: "Molesto", value: 100 },
-    { name: "Feliz", value: 600 }
+
+
+function Piechart(props){
+
+
+  const data = [
+    { name: "disgust", value: props.disgust*100 },
+    { name: "fear", value: props.fear*100 },
+    { name: "joy", value: props.joy*100 },
+    { name: "sadness", value: props.sadness*100}
   ];
   const COLORS = ["#C92416", "#009BF3", "#B54AF6", "#2FC5A1"];
+
 
 const PieComponent  = () => (
     <PieChart width={800} height={400}>
@@ -30,7 +36,6 @@ const PieComponent  = () => (
   
 );
 
-function Piechart(){
     return (
         <div>
             <PieComponent></PieComponent>
